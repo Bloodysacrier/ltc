@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>K&J Logistics | Soluciones de Carga Pesada</title>
+<link rel="icon" href="images/logo-kJ_edited.jpg" type="images/x-icon">
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#BE1E2D",
+        "background-light": "#F8FAFC",
+        "background-dark": "#0F172A",
+        charcoal: "#1E293B",
+      },
+      fontFamily: {
+        display: ["Oswald", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
+      },
+    },
+  },
+};
+</script>
+
+<style>
+.hero-gradient {
+  background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+}
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+</style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-sans antialiased">
+
+<nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20 items-center">
+<div class="flex-shrink-0 flex items-center space-x-2">
+<img alt="K&amp;J Logistics Logo" class="h-12 w-auto" src="images/logo-kJ_edited.jpg"/>
+<span class="hidden lg:block font-display text-2xl font-bold tracking-wider text-white"></span>
+</div>
+<div class="hidden md:block">
+<div class="ml-10 flex items-baseline space-x-8">
+<a class="text-white hover:text-primary px-3 py-2 text-sm font-semibold uppercase tracking-widest transition-colors" href="#acerca">Acerca de</a>
+<a class="text-white hover:text-primary px-3 py-2 text-sm font-semibold uppercase tracking-widest transition-colors" href="#servicios">Servicios</a>
+<a class="text-white hover:text-primary px-3 py-2 text-sm font-semibold uppercase tracking-widest transition-colors" href="#galeria">Galería</a>
+<a class="text-white hover:text-primary px-3 py-2 text-sm font-semibold uppercase tracking-widest transition-colors" href="#contacto">Contacto</a>
+</div>
+</div>
+<div class="md:hidden">
+<button id="menuBtn" class="text-white p-2">
+  <span class="material-icons">menu</span>
+</button>
+
+</div>
+</div>
+</div>
+</nav>
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden md:hidden bg-black/95 border-t border-white/10 fixed top-20 left-0 w-full z-40">
+  <div class="px-6 py-6 space-y-4">
+    <a href="#acerca" class="block text-white uppercase tracking-widest font-semibold hover:text-primary">Acerca de</a>
+    <a href="#servicios" class="block text-white uppercase tracking-widest font-semibold hover:text-primary">Servicios</a>
+    <a href="#galeria" class="block text-white uppercase tracking-widest font-semibold hover:text-primary">Galería</a>
+    <a href="#contacto" class="block text-white uppercase tracking-widest font-semibold hover:text-primary">Contacto</a>
+  </div>
+</div>
+
+<section class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Fleet of trucks" class="w-full h-full object-cover" src="images/camionkj.png"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+<div class="max-w-3xl">
+<h2 class="text-primary font-display text-xl font-bold uppercase tracking-[0.3em] mb-4">Líderes en Transporte</h2>
+<h1 class="text-white font-display text-6xl md:text-8xl font-bold leading-tight mb-6 text-shadow">MOVEMOS TU ÉXITO POR TODO EL PAÍS</h1>
+<p class="text-slate-200 text-lg md:text-xl mb-10 leading-relaxed max-w-2xl">
+                    Logística en transportes de carga especializada. Seguridad, puntualidad y eficiencia en cada kilómetro recorrido. Tu carga es nuestra misión.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-bold text-lg uppercase tracking-wider rounded shadow-lg hover:bg-red-700 transition-all transform hover:-translate-y-1" href="#contacto">
+                        Obtener una Cotización
+                        <span class="material-icons ml-2">trending_flat</span>
+</a>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold text-lg uppercase tracking-wider rounded hover:bg-white/20 transition-all" href="#servicios">
+                        Nuestros Servicios
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<section id="acerca" class="py-24 bg-white dark:bg-charcoal">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- TITULO -->
+    <div class="text-center mb-16">
+      <h2 class="text-primary font-bold uppercase tracking-widest mb-2">
+        Quiénes Somos
+      </h2>
+      <h3 class="text-3xl md:text-5xl font-display font-bold uppercase text-slate-900 dark:text-white">
+        Logística en Transportes de Carga K&J
+      </h3>
+      <div class="w-24 h-1 bg-primary mx-auto mt-6"></div>
+    </div>
+
+    <!-- DESCRIPCIÓN -->
+    <div class="max-w-5xl mx-auto text-slate-600 dark:text-slate-400 text-lg leading-relaxed text-justify mb-20">
+      <p>
+        En <strong>Logística en Transportes de Carga K&J</strong>, somos una empresa 100% mexicana
+        que ofrece soluciones logísticas completas a nivel nacional. Contamos con unidades desde
+        3.5 hasta 16 toneladas, aseguradas con cobertura amplia e inspeccionadas con verificaciones
+        federales de emisiones y físico-mecánicas.
+      </p>
+      <p class="mt-6">
+        Integramos transporte, mudanzas, embalaje, custodia, seguro de carga y almacenamiento,
+        brindando a nuestros clientes un servicio seguro y confiable.
+      </p>
+    </div>
+
+    <!-- MISION / VISION -->
+    <div class="grid md:grid-cols-2 gap-12">
+
+      <!-- MISION -->
+      <div class="p-10 border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark text-justify mb-20">
+        <h4 class="text-2xl font-display font-bold uppercase mb-6 text-slate-900 dark:text-white">
+          Misión
+        </h4>
+        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+          Brindar soluciones logísticas integrales a nivel nacional, coordinando de forma eficiente
+          el transporte, embalaje, custodia, seguro de carga, maniobra y almacenamiento de mercancías.
+          Garantizando la seguridad, puntualidad y cuidado en cada etapa del proceso, generando
+          confianza y valor para nuestros clientes mediante un equipo capacitado.
+        </p>
+      </div>
+
+      <!-- VISION -->
+      <div class="p-10 border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark text-justify mb-20">
+        <h4 class="text-2xl font-display font-bold uppercase mb-6 text-slate-900 dark:text-white">
+          Visión
+        </h4>
+        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+          Ofrecer soluciones logísticas completas, eficientes y confiables, que integren el transporte,
+          embalaje, custodia, seguro de carga, maniobra y almacenamiento, adaptándonos a las necesidades
+          de cada cliente.
+        </p>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 leading-relaxed">
+          Aspiramos a convertirnos en un aliado estratégico que impulse la entrega puntual de los
+          productos de nuestros clientes a través de innovación, servicio personalizado y excelencia
+          operativa.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="servicios" class="py-24 bg-slate-100 dark:bg-charcoal/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- TITULO -->
+    <div class="text-center mb-16">
+      <h2 class="text-primary font-bold uppercase tracking-widest mb-2">
+        En K&J le ofrecemos los siguientes servicios
+      </h2>
+      <div class="w-24 h-1 bg-primary mx-auto mt-6"></div>
+    </div>
+
+    <!-- GRID PRINCIPAL -->
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 items-stretch">
+
+      <!-- IMAGEN GRANDE IZQUIERDA -->
+      <div class="lg:col-span-2">
+        <div class="lg:min-h-[560px] h-full rounded-lg overflow-hidden shadow-xl">
+          <img 
+            src="images/principal.jpeg"
+            data-gallery class="w-full h-full object-cover"
+            alt="Servicios K&J Logistics"
+            class="w-full h-full object-cover"
+          >
+        </div>
+      </div>
+
+      <!-- SERVICIOS DERECHA -->
+      <div class="lg:col-span-3 lg:min-h-[560px] h-full">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 h-full content-start">
+
+          <!-- CARD -->
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/IngresoAIFA.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Ingreso a Recintos Fiscales AIFA y AICM
+              </h4>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/Transporteespecializado.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Transporte Especializado
+              </h4>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/fletesloc.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Fletes Locales y Foráneos
+              </h4>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/MANIOBRA_1.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Maniobra
+              </h4>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/EMBALAJE.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Embalaje
+              </h4>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/CUSTODIA.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Custodia
+              </h4>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden sm:col-span-2">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/almacenamiento.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Almacenamiento y Resguardo
+              </h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="py-24 dark:bg-background-dark" id="galeria">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+      <div>
+        <h2 class="text-primary font-bold uppercase tracking-widest mb-2">
+          Flota e Infraestructura
+        </h2>
+        <h3 class="text-3xl md:text-5xl font-display font-bold uppercase text-slate-900 dark:text-white">
+          Galería
+        </h3>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden h-64 md:h-auto cursor-pointer">
+        <img src="images/GAL1.jpg" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      </div>
+
+      <div class="relative group overflow-hidden h-64 cursor-pointer">
+        <img src="images/GAL2.jpg" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      </div>
+
+      <div class="relative group overflow-hidden h-64 cursor-pointer">
+        <img src="images/GAL3.jpg" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      </div>
+
+      <div class="md:col-span-2 relative group overflow-hidden h-64 cursor-pointer">
+        <img src="images/GAL4.jpg" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-slate-100 dark:bg-charcoal/50" id="contacto">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16">
+
+      <!-- Info de contacto -->
+      <div>
+        <h2 class="text-primary font-bold uppercase tracking-widest mb-2">
+          Contacto
+        </h2>
+
+        <h3 class="text-3xl md:text-5xl font-display font-bold uppercase mb-8 text-slate-900 dark:text-white">
+          Hablemos de su Próximo Envío
+        </h3>
+
+        <p class="text-slate-600 dark:text-slate-400 text-lg mb-10 leading-relaxed">
+          ¿Tienes preguntas o necesitas una cotización? Escríbenos a través del
+          formulario y con gusto te responderemos. Tu carga es nuestra
+          responsabilidad, y queremos ayudarte a que llegue segura ya tiempo a
+          cualquier parte de México.
+        </p>
+
+        <div class="space-y-6">
+
+          <!-- Ubicación -->
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-primary flex items-center justify-center rounded">
+              <span class="material-icons text-white">location_on</span>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg font-semibold text-gray-900 dark:text-white">
+                Ubicación
+              </h4>
+
+              <a
+                href="https://www.google.com/maps?q=Calle+Educación+Pública+62,+Federal,+Venustiano+Carranza,+15700+Ciudad+de+México"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block text-gray-600 dark:text-gray-300 text-sm leading-relaxed
+         hover:text-blue-600 dark:hover:text-blue-400
+         hover:underline transition-colors"
+              >
+                Calle Educación Pública 62, local 2, Federal,<br>
+                Venustiano Carranza, 15700<br>
+                Ciudad de México
+              </a>
+            </div>
+          </div>
+
+          <!-- Teléfonos -->
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-primary flex items-center justify-center rounded">
+              <span class="material-icons text-white">phone</span>
+            </div>
+            <div class="ml-4">
+              <h4 class="font-bold text-slate-900 dark:text-white">
+                Teléfonos de Atención
+              </h4>
+              <p class="text-slate-600 dark:text-slate-400">
+                +52 5528883918 / +52 5530172633
+              </p>
+            </div>
+          </div>
+
+          <!-- Correo -->
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-primary flex items-center justify-center rounded">
+              <span class="material-icons text-white">email</span>
+            </div>
+            <div class="ml-4">
+              <h4 class="font-bold text-slate-900 dark:text-white">
+                Correo Electrónico
+              </h4>
+              <p class="text-slate-600 dark:text-slate-400">
+                <a
+                  href="mailto:logistica@transporteskyj.com"
+                  class="hover:underline hover:text-blue-600 dark:hover:text-blue-400"
+                >
+                  logistica@transporteskyj.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Facebook -->
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-primary flex items-center justify-center rounded">
+              <span class="material-icons text-white">facebook</span>
+            </div>
+            <div class="ml-4">
+              <h4 class="font-bold text-slate-900 dark:text-white">
+                Facebook
+              </h4>
+              <p class="text-slate-600 dark:text-slate-400">
+                <a
+                  href="https://www.facebook.com/logisticaltc"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-600 dark:hover:text-blue-400"
+                >
+                  Logística LTC
+                </a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="bg-white dark:bg-background-dark p-8 md:p-10 shadow-xl border border-slate-200 dark:border-slate-800">
+        <h4 class="text-2xl font-display font-bold mb-6 uppercase text-slate-900 dark:text-white">
+        Solicitar Cotización
+        </h4>
+      <form class="space-y-6" onsubmit="enviarCorreo(event)">
+        <div>
+          <label class="block text-sm font-bold uppercase tracking-wider mb-2 text-slate-600 dark:text-slate-400">
+            Nombre Completo
+          </label>
+          <input
+            id="nombre"
+            type="text"
+            required
+            class="w-full bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:ring-primary focus:border-primary px-4 py-3"
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold uppercase tracking-wider mb-2 text-slate-600 dark:text-slate-400">
+            Correo Electrónico
+          </label>
+          <input
+            id="correo"
+            type="email"
+            required
+            class="w-full bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:ring-primary focus:border-primary px-4 py-3"
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold uppercase tracking-wider mb-2 text-slate-600 dark:text-slate-400">
+            Mensaje
+          </label>
+          <textarea
+            id="mensaje"
+            rows="4"
+            required
+            class="w-full bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:ring-primary focus:border-primary px-4 py-3"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-primary hover:bg-red-700 text-white font-bold py-4 uppercase tracking-widest transition-all"
+        >
+          Enviar Solicitud
+        </button>
+      </form>
+
+
+    </div>
+  </div>
+  <!-- MAPA -->
+<div class="mt-20">
+  <h4 class="text-center text-2xl font-display font-bold uppercase mb-8 text-slate-900 dark:text-white">
+    Nuestra Ubicación
+  </h4>
+
+  <div class="w-full h-[450px] rounded-lg overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800">
+    <iframe
+      class="w-full h-full"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Calle%20Educación%20Pública%2062,%20Federal,%20Venustiano%20Carranza,%2015700%20Ciudad%20de%20México&output=embed">
+    </iframe>
+  </div>
+</div>
+
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="fixed inset-0 bg-black/90 hidden z-50 flex items-center justify-center">
+  
+  <!-- Cerrar -->
+  <button id="closeLightbox" class="absolute top-6 right-6 text-white text-4xl">
+    ✕
+  </button>
+
+  <!-- Anterior -->
+  <button id="prevImg" class="absolute left-6 text-white text-5xl">
+    ‹
+  </button>
+
+  <!-- Imagen -->
+  <img id="lightboxImg" class="max-h-[90vh] max-w-[90vw] object-contain"/>
+
+  <!-- Siguiente -->
+  <button id="nextImg" class="absolute right-6 text-white text-5xl">
+    ›
+  </button>
+</div>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/525528883918"
+   target="_blank"
+   aria-label="WhatsApp"
+   class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 shadow-lg transition transform hover:scale-110">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 32 32"
+       fill="white"
+       class="w-8 h-8">
+    <path d="M16.003 3C9.373 3 4 8.373 4 15.003c0 2.646.87 5.093 2.34 7.07L4 29l7.164-2.305a11.94 11.94 0 0 0 4.84 1.007h.003c6.63 0 12.003-5.373 12.003-12.003C28.01 8.373 22.637 3 16.003 3zm6.93 16.417c-.293.823-1.703 1.578-2.352 1.672-.608.088-1.375.125-2.22-.141-.513-.164-1.17-.379-2.02-.746-3.55-1.534-5.866-5.108-6.042-5.346-.176-.235-1.442-1.92-1.442-3.665 0-1.745.911-2.604 1.235-2.961.324-.356.705-.445.94-.445.235 0 .47.003.676.013.216.01.506-.082.793.605.293.706.998 2.445 1.086 2.623.088.176.147.382.029.617-.118.235-.176.382-.353.588-.176.206-.373.46-.529.617-.176.176-.36.37-.155.735.206.353.914 1.507 1.962 2.442 1.347 1.199 2.484 1.57 2.837 1.745.353.176.558.147.764-.088.206-.235.881-1.028 1.117-1.382.235-.353.47-.293.793-.176.324.118 2.058.97 2.411 1.147.353.176.588.265.676.412.088.147.088.823-.206 1.646z"/>
+  </svg>
+</a>
+
+<script>
+  const images = [...document.querySelectorAll("[data-gallery]")];
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  const closeBtn = document.getElementById("closeLightbox");
+  const prevBtn = document.getElementById("prevImg");
+  const nextBtn = document.getElementById("nextImg");
+
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    lightboxImg.src = images[currentIndex].src;
+    lightbox.classList.remove("hidden");
+  }
+
+  function closeLightbox() {
+    lightbox.classList.add("hidden");
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  }
+
+  images.forEach((img, i) => {
+    img.addEventListener("click", () => openLightbox(i));
+  });
+
+  closeBtn.addEventListener("click", closeLightbox);
+  nextBtn.addEventListener("click", showNext);
+  prevBtn.addEventListener("click", showPrev);
+
+  // Cerrar al dar click fuera
+  lightbox.addEventListener("click", e => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // Teclado
+  document.addEventListener("keydown", e => {
+    if (lightbox.classList.contains("hidden")) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowRight") showNext();
+    if (e.key === "ArrowLeft") showPrev();
+  });
+</script>
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  // Cerrar menú al hacer click en un link
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+    });
+  });
+</script>
+
+<script>
+  function enviarCorreo(event) {
+    event.preventDefault();
+
+    const nombre = document.getElementById("nombre").value;
+    const correo = document.getElementById("correo").value;
+    const mensaje = document.getElementById("mensaje").value;
+
+    const destinatario = "logistica@transporteskyj.com"; 
+    const asunto = encodeURIComponent("Solicitud de Cotización");
+    const cuerpo = encodeURIComponent(
+      `Nombre: ${nombre}\nCorreo: ${correo}\n\nMensaje:\n${mensaje}`
+    );
+
+    window.location.href = `mailto:${destinatario}?subject=${asunto}&body=${cuerpo}`;
+  }
+</script>
+
+
+</body></html>
