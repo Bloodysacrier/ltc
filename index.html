@@ -55,6 +55,7 @@ tailwind.config = {
 <div class="ml-10 flex items-baseline space-x-8">
 <a class="text-white hover:text-primary px-3 py-2 text-sm font-semibold uppercase tracking-widest transition-colors" href="#acerca">Acerca de</a>
 <a class="text-white hover:text-primary px-3 py-2 text-sm font-semibold uppercase tracking-widest transition-colors" href="#servicios">Servicios</a>
+<a class="text-white hover:text-primary px-3 py-2 text-sm font-semibold uppercase tracking-widest transition-colors" href="#transportes">Camiones</a>
 <a class="text-white hover:text-primary px-3 py-2 text-sm font-semibold uppercase tracking-widest transition-colors" href="#galeria">Galería</a>
 <a class="text-white hover:text-primary px-3 py-2 text-sm font-semibold uppercase tracking-widest transition-colors" href="#contacto">Contacto</a>
 </div>
@@ -73,6 +74,7 @@ tailwind.config = {
   <div class="px-6 py-6 space-y-4">
     <a href="#acerca" class="block text-white uppercase tracking-widest font-semibold hover:text-primary">Acerca de</a>
     <a href="#servicios" class="block text-white uppercase tracking-widest font-semibold hover:text-primary">Servicios</a>
+    <a href="#transportes" class="block text-white uppercase tracking-widest font-semibold hover:text-primary">Camiones</a>
     <a href="#galeria" class="block text-white uppercase tracking-widest font-semibold hover:text-primary">Galería</a>
     <a href="#contacto" class="block text-white uppercase tracking-widest font-semibold hover:text-primary">Contacto</a>
   </div>
@@ -166,6 +168,7 @@ tailwind.config = {
     </div>
   </div>
 </section>
+
 <section id="servicios" class="py-24 bg-slate-100 dark:bg-charcoal/50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -184,7 +187,8 @@ tailwind.config = {
       <div class="lg:col-span-2">
         <div class="lg:min-h-[560px] h-full rounded-lg overflow-hidden shadow-xl">
           <img 
-            src="images/principal.jpeg"
+            src="images/Principal1.jpeg"
+            data-gallery="servicios"
             data-gallery class="w-full h-full object-cover"
             alt="Servicios K&J Logistics"
             class="w-full h-full object-cover"
@@ -199,7 +203,7 @@ tailwind.config = {
           <!-- CARD -->
           <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
             <div class="relative h-40 overflow-hidden">
-              <img src="images/IngresoAIFA.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+              <img src="images/IngresoAIFA.webp"data-gallery="servicios" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
             </div>
             <div class="p-3 text-center">
               <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -210,7 +214,7 @@ tailwind.config = {
 
           <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
             <div class="relative h-40 overflow-hidden">
-              <img src="images/Transporteespecializado.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+              <img src="images/Transporteespecializado.jpg" data-gallery="servicios"data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
             </div>
             <div class="p-3 text-center">
               <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -221,7 +225,7 @@ tailwind.config = {
 
           <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
             <div class="relative h-40 overflow-hidden">
-              <img src="images/fletesloc.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+              <img src="images/fletesloc.jpg" data-gallery="servicios" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
             </div>
             <div class="p-3 text-center">
               <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -232,7 +236,7 @@ tailwind.config = {
 
           <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
             <div class="relative h-40 overflow-hidden">
-              <img src="images/MANIOBRA_1.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+              <img src="images/MANIOBRA_1.jpg" data-gallery="servicios" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
             </div>
             <div class="p-3 text-center">
               <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -243,7 +247,7 @@ tailwind.config = {
 
           <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
             <div class="relative h-40 overflow-hidden">
-              <img src="images/EMBALAJE.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+              <img src="images/EMBALAJE.jpg" data-gallery="servicios" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
             </div>
             <div class="p-3 text-center">
               <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -254,7 +258,7 @@ tailwind.config = {
 
           <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
             <div class="relative h-40 overflow-hidden">
-              <img src="images/CUSTODIA.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+              <img src="images/CUSTODIA.jpg" data-gallery="servicios" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
             </div>
             <div class="p-3 text-center">
               <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -265,7 +269,7 @@ tailwind.config = {
 
           <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden sm:col-span-2">
             <div class="relative h-40 overflow-hidden">
-              <img src="images/almacenamiento.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+              <img src="images/almacenamiento.jpg" data-gallery="servicios" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
             </div>
             <div class="p-3 text-center">
               <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -282,8 +286,147 @@ tailwind.config = {
 </section>
 
 
+<section id="transportes" class="py-24 bg-white dark:bg-charcoal">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-<section class="py-24 dark:bg-background-dark" id="galeria">
+    <!-- TÍTULO -->
+    <div class="text-center mb-16">
+      <h2 class="text-primary font-bold uppercase tracking-widest mb-2">
+        Nuestra Flota
+      </h2>
+      <h3 class="text-3xl md:text-5xl font-display font-bold uppercase text-slate-900 dark:text-white">
+        Nuestros Camiones
+      </h3>
+      <div class="w-24 h-1 bg-primary mx-auto mt-6"></div>
+    </div>
+
+    <!-- GRID DE TRANSPORTES -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+      <!-- CARD -->
+      <div class="relative group overflow-hidden shadow-xl">
+        <img src="images/freightliner.jpg" alt="Camión 3.5 toneladas"
+             class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+        
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center
+                    text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-6">
+          <h4 class="text-white font-display text-xl font-bold uppercase mb-2">
+            Freightliner M2 mod 2008
+          </h4>
+          <p class="text-slate-200 text-sm leading-relaxed">
+              12 pallets
+              11 ton
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="relative group overflow-hidden shadow-xl">
+        <img src="images/freightliner2.jpg" alt="Camión 5 toneladas"
+             class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center
+                    text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-6">
+          <h4 class="text-white font-display text-xl font-bold uppercase mb-2">
+            Freightliner M2 mod 2012
+
+          </h4>
+          <p class="text-slate-200 text-sm leading-relaxed">
+            Transporte eficiente para cargas medianas en rutas locales y foráneas.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="relative group overflow-hidden shadow-xl">
+        <img src="images/Constellation.jpg" alt="Camión 10 toneladas"
+             class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center
+                    text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-6">
+          <h4 class="text-white font-display text-xl font-bold uppercase mb-2">
+            VW Constellation mod 2017
+          </h4>
+          <p class="text-slate-200 text-sm leading-relaxed">
+            Perfecto para carga pesada y movimientos industriales a larga distancia.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="relative group overflow-hidden shadow-xl">
+        <img src="images/isuzu2012.jpg" alt="Camión 16 toneladas"
+             class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center
+                    text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-6">
+          <h4 class="text-white font-display text-xl font-bold uppercase mb-2">
+            Isuzu mod 2012
+
+          </h4>
+          <p class="text-slate-200 text-sm leading-relaxed">
+            Soluciones de alto volumen para proyectos logísticos y cargas especializadas.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="relative group overflow-hidden shadow-xl">
+        <img src="images/isuzu2013.jpg" alt="Camión 16 toneladas"
+             class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center
+                    text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-6">
+          <h4 class="text-white font-display text-xl font-bold uppercase mb-2">
+            Isuzu mod 2013
+          </h4>
+          <p class="text-slate-200 text-sm leading-relaxed">
+            Soluciones de alto volumen para proyectos logísticos y cargas especializadas.
+          </p>
+        </div>
+      </div>
+      <!-- CARD -->
+      <div class="relative group overflow-hidden shadow-xl">
+        <img src="images/freightliner3.jpg" alt="Camión 16 toneladas"
+             class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center
+                    text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-6">
+          <h4 class="text-white font-display text-xl font-bold uppercase mb-2">
+            Freightliner mod 2015
+          </h4>
+          <p class="text-slate-200 text-sm leading-relaxed">
+            Soluciones de alto volumen para proyectos logísticos y cargas especializadas.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="relative group overflow-hidden shadow-xl">
+        <img src="images/freightliner4.jpg" alt="Camión 16 toneladas"
+             class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center
+                    text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-6">
+          <h4 class="text-white font-display text-xl font-bold uppercase mb-2">
+            Freightliner mod 2012
+
+          </h4>
+          <p class="text-slate-200 text-sm leading-relaxed">
+            Soluciones de alto volumen para proyectos logísticos y cargas especializadas.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+ 
+
+
+
+<section class="py-24 bg-slate-100 dark:bg-charcoal/50" id="galeria">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
       <div>
@@ -298,25 +441,41 @@ tailwind.config = {
 
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
       <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden h-64 md:h-auto cursor-pointer">
-        <img src="images/GAL1.jpg" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+        <img src="images/GAL1.jpg" data-gallery="galeria" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
       </div>
 
       <div class="relative group overflow-hidden h-64 cursor-pointer">
-        <img src="images/GAL2.jpg" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+        <img src="images/GAL2.jpg" data-gallery="galeria" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
       </div>
 
       <div class="relative group overflow-hidden h-64 cursor-pointer">
-        <img src="images/GAL3.jpg" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+        <img src="images/GAL3.jpg" data-gallery="galeria" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
       </div>
 
       <div class="md:col-span-2 relative group overflow-hidden h-64 cursor-pointer">
-        <img src="images/GAL4.jpg" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+        <img src="images/GAL4.jpg" data-gallery="galeria" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
       </div>
+
+      <!-- IMÁGENES OCULTAS (SOLO PARA LA GALERÍA) -->
+      <div class="hidden">
+        <img src="images/GAL5.jpg" data-gallery="galeria">
+        <img src="images/GAL6.jpg" data-gallery="galeria">
+        <img src="images/GAL7.jpg" data-gallery="galeria">
+        <img src="images/GAL8.jpg" data-gallery="galeria">
+      </div>
+
     </div>
+    <div class="text-center mt-8">
+      <button onclick="openGallery()"
+              class="text-primary font-semibold uppercase tracking-widest hover:underline">
+        Ver más
+      </button>
+    </div>
+
   </div>
 </section>
 
-<section class="py-24 bg-slate-100 dark:bg-charcoal/50" id="contacto">
+<section class="py-24 bg-white dark:bg-charcoal" id="contacto">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid lg:grid-cols-2 gap-16">
 
@@ -531,7 +690,6 @@ tailwind.config = {
 </a>
 
 <script>
-  const images = [...document.querySelectorAll("[data-gallery]")];
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightboxImg");
   const closeBtn = document.getElementById("closeLightbox");
@@ -539,10 +697,12 @@ tailwind.config = {
   const nextBtn = document.getElementById("nextImg");
 
   let currentIndex = 0;
+  let currentGallery = [];
 
-  function openLightbox(index) {
-    currentIndex = index;
-    lightboxImg.src = images[currentIndex].src;
+  function openLightbox(img, galleryName) {
+    currentGallery = [...document.querySelectorAll(`[data-gallery="${galleryName}"]`)];
+    currentIndex = currentGallery.indexOf(img);
+    lightboxImg.src = img.src;
     lightbox.classList.remove("hidden");
   }
 
@@ -551,29 +711,29 @@ tailwind.config = {
   }
 
   function showNext() {
-    currentIndex = (currentIndex + 1) % images.length;
-    lightboxImg.src = images[currentIndex].src;
+    currentIndex = (currentIndex + 1) % currentGallery.length;
+    lightboxImg.src = currentGallery[currentIndex].src;
   }
 
   function showPrev() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    lightboxImg.src = images[currentIndex].src;
+    currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+    lightboxImg.src = currentGallery[currentIndex].src;
   }
 
-  images.forEach((img, i) => {
-    img.addEventListener("click", () => openLightbox(i));
+  document.querySelectorAll("[data-gallery]").forEach(img => {
+    img.addEventListener("click", () => {
+      openLightbox(img, img.dataset.gallery);
+    });
   });
 
   closeBtn.addEventListener("click", closeLightbox);
   nextBtn.addEventListener("click", showNext);
   prevBtn.addEventListener("click", showPrev);
 
-  // Cerrar al dar click fuera
   lightbox.addEventListener("click", e => {
     if (e.target === lightbox) closeLightbox();
   });
 
-  // Teclado
   document.addEventListener("keydown", e => {
     if (lightbox.classList.contains("hidden")) return;
     if (e.key === "Escape") closeLightbox();
@@ -581,6 +741,7 @@ tailwind.config = {
     if (e.key === "ArrowLeft") showPrev();
   });
 </script>
+
 <script>
   const menuBtn = document.getElementById("menuBtn");
   const mobileMenu = document.getElementById("mobileMenu");
@@ -614,6 +775,16 @@ tailwind.config = {
     window.location.href = `mailto:${destinatario}?subject=${asunto}&body=${cuerpo}`;
   }
 </script>
+
+<script>
+  function openGallery() {
+    const firstImage = document.querySelector('[data-gallery]');
+    if (firstImage) {
+      firstImage.click();
+    }
+  }
+</script>
+
 
 
 </body></html>
