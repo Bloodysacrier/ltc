@@ -315,7 +315,7 @@ tailwind.config = {
             Freightliner M2 mod 2008
           </h4>
           <p class="text-slate-200 text-sm leading-relaxed">
-              12 pallets
+              12 pallets <br>
               11 ton
           </p>
         </div>
@@ -329,11 +329,13 @@ tailwind.config = {
         <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center
                     text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-6">
           <h4 class="text-white font-display text-xl font-bold uppercase mb-2">
-            Freightliner M2 mod 2012
+            12 pallets <br>
+            11 ton
 
           </h4>
           <p class="text-slate-200 text-sm leading-relaxed">
-            Transporte eficiente para cargas medianas en rutas locales y foráneas.
+            12 pallets <br>
+            16 ton
           </p>
         </div>
       </div>
@@ -349,7 +351,8 @@ tailwind.config = {
             VW Constellation mod 2017
           </h4>
           <p class="text-slate-200 text-sm leading-relaxed">
-            Perfecto para carga pesada y movimientos industriales a larga distancia.
+            8 pallets <br>
+            6 ton
           </p>
         </div>
       </div>
@@ -366,7 +369,8 @@ tailwind.config = {
 
           </h4>
           <p class="text-slate-200 text-sm leading-relaxed">
-            Soluciones de alto volumen para proyectos logísticos y cargas especializadas.
+            8 pallets <br>
+            6 ton
           </p>
         </div>
       </div>
@@ -382,7 +386,8 @@ tailwind.config = {
             Isuzu mod 2013
           </h4>
           <p class="text-slate-200 text-sm leading-relaxed">
-            Soluciones de alto volumen para proyectos logísticos y cargas especializadas.
+            8 pallets <br>
+            6 ton.
           </p>
         </div>
       </div>
@@ -397,7 +402,8 @@ tailwind.config = {
             Freightliner mod 2015
           </h4>
           <p class="text-slate-200 text-sm leading-relaxed">
-            Soluciones de alto volumen para proyectos logísticos y cargas especializadas.
+            8 pallets <br>
+            6 ton.
           </p>
         </div>
       </div>
@@ -414,7 +420,25 @@ tailwind.config = {
 
           </h4>
           <p class="text-slate-200 text-sm leading-relaxed">
-            Soluciones de alto volumen para proyectos logísticos y cargas especializadas.
+            12 pallets <br>
+            8 ton.
+          </p>
+        </div>
+      </div>
+
+            <div class="relative group overflow-hidden shadow-xl">
+        <img src="images/Trailer6.jpeg" alt="Camión 16 toneladas"
+             class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center
+                    text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-6">
+          <h4 class="text-white font-display text-xl font-bold uppercase mb-2">
+            Freightliner mod 2012
+
+          </h4>
+          <p class="text-slate-200 text-sm leading-relaxed">
+            25 pallets <br>
+            30 ton.
           </p>
         </div>
       </div>
@@ -458,10 +482,10 @@ tailwind.config = {
 
       <!-- IMÁGENES OCULTAS (SOLO PARA LA GALERÍA) -->
       <div class="hidden">
-        <img src="images/GAL5.jpg" data-gallery="galeria">
-        <img src="images/GAL6.jpg" data-gallery="galeria">
-        <img src="images/GAL7.jpg" data-gallery="galeria">
-        <img src="images/GAL8.jpg" data-gallery="galeria">
+        <img src="images/IngresoAIFA.webp" data-gallery="galeria">
+        <img src="images/isuzu2012.jpg" data-gallery="galeria">
+        <img src="images/Trailer6.jpeg" data-gallery="galeria">
+        <img src="images/freightliner3.jpg" data-gallery="galeria">
       </div>
 
     </div>
@@ -778,12 +802,15 @@ tailwind.config = {
 
 <script>
   function openGallery() {
-    const firstImage = document.querySelector('[data-gallery]');
+    const gallerySection = document.querySelector('#galeria');
+    const firstImage = gallerySection.querySelector('[data-gallery]');
+    
     if (firstImage) {
       firstImage.click();
     }
   }
 </script>
+
 
 
 
